@@ -1,0 +1,9 @@
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer img {
+  margin-left: 5em;
+  width: 32px;
+  height: 32px;
+}

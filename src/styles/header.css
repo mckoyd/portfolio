@@ -1,0 +1,103 @@
+@font-face {
+  font-family: TangerineBold;
+  src: url('../assets/fonts/Tangerine-Bold.ttf');
+}
+@font-face {
+  font-family: JuliusSans;
+  src: url('../assets/fonts/JuliusSansOne-Regular.ttf');
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  padding-left: 25vw;
+}
+.typer h2 {
+  border-right: .01em solid #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: TangerineBold;
+  font-size: 2.5em;
+}
+.typer h2:nth-child(1) {
+  width: 2.2em;
+  animation: type 1s steps(40, end);
+  animation-fill-mode: forwards;
+}
+.typer h2:nth-child(2) {
+  width: 2.8em;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.typer h2:nth-child(3) {
+  width: 3.1em;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.typer h2:nth-child(4) {
+  width: 4.3em;
+  opacity: 0;
+  animation: type2 1s steps(40, end);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.typer h2:nth-child(5) {
+  width: 5.8em;
+  opacity: 0;
+  animation: type3 1.8s steps(40, end), blink .5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.header .typer h1 {
+  padding: 1em;
+  text-align: right;
+  font-size: 120%;
+  font-family: JuliusSans;
+  opacity: 0;
+  animation: type4 1s;
+  animation-delay: 5.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% { width: 0; }
+  99.9% { border-right: .01em solid #ffffff; }
+  100% { border: none; }
+}
+@keyframes type2 {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  99.9% { border-right: .01em solid #ffffff; }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type3 {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  99.9% { border-right: .01em solid #ffffff; }
+  100% { opacity: 1; }
+}
+@keyframes type4 {
+  1% { opacity: 0.5; }
+  100% {
+    opacity: 1;
+    font-weight: bolder;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
