@@ -99,8 +99,8 @@
 }
 @media screen and (min-width: 425px) {
   .header {
-    margin-top: 12vh;
-    padding-left: 35vw;
+    margin-top: 10%;
+    padding-left: 35%;
   }
   .typer h2 {
     font-size: 2.3em;
@@ -111,11 +111,11 @@
 }
 @media screen and (min-width: 625px) {
   .header {
-    margin-top: 10vh;
-    padding-left: 40vw;
+    margin-top: 3%;
+    padding-left: 38%;
   }
   .typer h2 {
-    font-size: 3.5em;
+    font-size: 2.8em;
   }
   .header .typer h1 {
     font-size: 2em;
@@ -123,11 +123,11 @@
 }
 @media screen and (min-width: 825px) {
   .header {
-    margin-top: 8vh;
-    padding-left: 34vw;
+    padding-left: 40%;
+    margin-top: 3%;
   }
   .typer h2 {
-    font-size: 4.5em;
+    font-size: 2.5em;
   }
   .header .typer h1 {
     font-size: 3em;
@@ -136,14 +136,13 @@
 
 @media screen and (min-width: 1024px) {
   .header {
-    margin-top: 10vh;
-    padding-left: 31vw;
+    padding-left: 50%;
   }
   .typer h2 {
-    font-size: 5em;
+    font-size: 3em;
   }
   .header .typer h1 {
-    font-size: 4em;
+    font-size: 2.5em;
   }
 }
 
