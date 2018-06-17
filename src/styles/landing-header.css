@@ -18,7 +18,8 @@
   white-space: nowrap;
   overflow: hidden;
   font-family: TangerineBold;
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 1.3;
 }
 .typer h2:nth-child(1) {
   width: 2.2em;
@@ -55,8 +56,8 @@
 }
 .header .typer h1 {
   padding: 1em;
+  font-size: 1.3em;
   text-align: right;
-  font-size: 120%;
   font-family: JuliusSans;
   opacity: 0;
   animation: type4 1s;
@@ -96,7 +97,55 @@
     border-color: transparent;
   }
 }
+@media screen and (min-width: 425px) {
+  .header {
+    margin-top: 12vh;
+    padding-left: 35vw;
+  }
+  .typer h2 {
+    font-size: 2.3em;
+  }
+  .header .typer h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 625px) {
+  .header {
+    margin-top: 10vh;
+    padding-left: 40vw;
+  }
+  .typer h2 {
+    font-size: 3.5em;
+  }
+  .header .typer h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 825px) {
+  .header {
+    margin-top: 8vh;
+    padding-left: 34vw;
+  }
+  .typer h2 {
+    font-size: 4.5em;
+  }
+  .header .typer h1 {
+    font-size: 3em;
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .header {
+    margin-top: 10vh;
+    padding-left: 31vw;
+  }
+  .typer h2 {
+    font-size: 5em;
+  }
+  .header .typer h1 {
+    font-size: 4em;
+  }
+}
 
 
 

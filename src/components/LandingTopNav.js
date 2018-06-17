@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/top-nav.css';
+import '../styles/landing-top-nav.css';
 
 export const LandingTopNav = () => (
   <nav>
