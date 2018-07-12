@@ -1,0 +1,68 @@
+@font-face {
+  font-family: TangerineBold;
+  src: url('../assets/fonts/Tangerine-Bold.ttf');
+}
+@font-face {
+  font-family: JuliusSans;
+  src: url('../assets/fonts/JuliusSansOne-Regular.ttf');
+}
+
+.modal {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.5);
+  padding: 4em 0;
+  visibility: hidden;
+}
+.modal.visible {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+  visibility: visible;
+}
+
+.modal-content {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/menu-modal.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1em;
+  outline: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.modal-content h3 {
+  font-family: TangerineBold;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+.modal-content span{
+  font-family: JuliusSans;
+}
+
+.modal-content #nav-home-btn {
+  line-height: 1;
+  font-size: 1em;
+  align-self: flex-end;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 100px;
+  padding: 0.5em;
+}
+
+
+
+

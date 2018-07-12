@@ -1,5 +1,5 @@
 import React from 'react';
-import { LandingTopNav } from './LandingTopNav';
+import LandingTopNav from './LandingTopNav';
 import { LandingHeader } from './LandingHeader';
 import { LandingFooter } from './LandingFooter';
 

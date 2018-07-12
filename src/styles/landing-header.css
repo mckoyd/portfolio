@@ -23,7 +23,7 @@
 }
 .typer h2:nth-child(1) {
   width: 2.2em;
-  animation: type 1s steps(40, end);
+  animation: type 1s steps(24);
   animation-fill-mode: forwards;
 }
 .typer h2:nth-child(2) {
@@ -43,14 +43,14 @@
 .typer h2:nth-child(4) {
   width: 4.3em;
   opacity: 0;
-  animation: type2 1s steps(40, end);
+  animation: type2 1s steps(60, end);
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 .typer h2:nth-child(5) {
   width: 5.8em;
   opacity: 0;
-  animation: type3 1.8s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type3 1.8s steps(70, end), blink .5s step-end infinite alternate;
   animation-delay: 4s;
   animation-fill-mode: forwards;
 }
@@ -130,13 +130,26 @@
     font-size: 2.5em;
   }
   .header .typer h1 {
-    font-size: 3em;
+    font-size: 2.2em;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .header {
     padding-left: 50%;
+    margin-top: 1%;
+  }
+  .typer h2 {
+    font-size: 3em;
+  }
+  .header .typer h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .header {
+    padding-left: 45%;
   }
   .typer h2 {
     font-size: 3em;
