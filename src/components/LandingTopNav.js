@@ -7,7 +7,7 @@ import NavModal from './NavModal';
 export const LandingTopNav = props => (
   <nav>
     <p>introducing  
-      <span 
+      <span className='tag'
         onClick={() => props.dispatch(toggleNav())}> the real mckoy
       </span>
     </p>

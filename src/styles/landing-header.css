@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
-  padding-left: 25vw;
+  padding: 0 10%;
+  flex-grow: 1;
 }
 .typer h2 {
   border-right: .01em solid #ffffff;
@@ -55,9 +56,8 @@
   animation-fill-mode: forwards;
 }
 .header .typer h1 {
-  padding: 1em;
+  padding: 1em 0;
   font-size: 1.3em;
-  text-align: right;
   font-family: JuliusSans;
   opacity: 0;
   animation: type4 1s;

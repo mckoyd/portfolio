@@ -9,16 +9,22 @@
 
 nav p {
   padding: 0.8em;
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
-nav span {
+nav .tag {
   font-family: JuliusSans;
+  animation: focus 2s infinite;
+  animation-delay: 8s;
 }
 
 nav span:hover {
   cursor: pointer;
 }
-
+@keyframes focus {
+  50% {
+    color: transparent;
+  }
+}
 @media screen and (min-width: 425px) {
   nav p {
     font-size: 1.5em;
