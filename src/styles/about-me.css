@@ -12,43 +12,43 @@
 }
 
 
-
-.profile {
+.about-me {
+  flex-direction: column;
+  display: flex;
+}
+.about-me .summary{
   background: linear-gradient(
-    rgba(0, 0, 0, 0.45), 
-    rgba(0, 0, 0, 0.45)
-  ),url('../assets/images/profile.png') no-repeat center center fixed;
+    rgba(51, 57, 105, 0.7), 
+    rgba(20, 22, 37, 0.67)
+  ),url('../assets/images/profile.png') no-repeat bottom center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(40, 57, 112);
   color: #f2fbff;
+  height: 100vh;
+}
+.about-me .summary article {
+  flex-grow: 1;
 }
 
-.profile h1{
-  font-family: TangerineBold;
-  padding: 0.3em;
-  font-size: 3em;
-}
-
-.profile .topic {
+.about-me .topic {
   font-family: JuliusSans;
-  margin-left: 1em;
   padding: 0.5em;
   text-align: center;
   font-size: 1.3em;
 }
 
-.profile .profile-article {
-  margin-left: 1.5em;
-  padding: 0 0.7em;
-  text-align: left;
-  font-size: 1.1em;
+
+.about-me .profile-article {
+  padding: 0 1.45em;
+  text-align: justify;
+  font-size: 0.9em;
   letter-spacing: 0.05em;
 }
 
-.profile .blurb{
+.about-me .blurb{
   font-family: JuliusSans;
   text-align: center;
 }

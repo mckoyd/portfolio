@@ -7,36 +7,27 @@
   src: url('../assets/fonts/JuliusSansOne-Regular.ttf');
 }
 
-.modal {
-  z-index: 3;
-  position: fixed;
-  display: flex;
-  left: 0;
-  top: 0;
-  width: 100%;
+.nav-menu {
+  transform: translateX(100%);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+  box-shadow: none;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0, 0.5);
-  padding: 4em 0;
+  max-width: 50%;
+  padding: 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
   visibility: hidden;
-}
-
-.modal-content {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/menu-modal.png') no-repeat center center fixed;
+  width: 15em;
+  z-index: 1;
+  font-size: 1em;
+  background: linear-gradient(rgba(8, 33, 13, 0.88), rgba(25, 54, 41, 0.89)), url(/static/media/menu-modal.6f47e12e.png) no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  position: relative;
-  overflow: auto;
-  padding: 1em;
-  outline: 0;
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  border-radius: 5%;
 }
 
-.modal.visible {
+.nav-menu.visible {
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -45,17 +36,35 @@
   visibility: visible;
 }
 
-.modal-content h3 {
-  font-family: TangerineBold;
-  font-size: 2em;
-  letter-spacing: 0.05em;
+.nav-menu .close {
+  text-align: right;
+  margin: 5% 0;
 }
 
-.modal-content span{
+.nav-menu h3 {
+  font-family: JuliusSans;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+.nav-menu span{
   font-family: JuliusSans;
 }
 
-.modal-content #nav-home-btn {
+.nav-menu .nav-desc {
+  font-size: 0.9em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.nav-menu .home-btn p{
+  font-family: JuliusSans;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+/* .nav-menu #nav-home-btn {
   line-height: 0.2;
   font-size: 1em;
   align-self: flex-end;
@@ -66,7 +75,7 @@
   background-color: rgba(0,0,0, 0.5);
   border-radius: 100px;
   padding: 1em;
-}
+} */
 
 
 

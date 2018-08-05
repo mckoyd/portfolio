@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { toggleNav } from '../actions';
-import NavModal from './NavModal';
-import '../styles/profile.css';
+import '../styles/about-me.css';
+import AboutMeTopNav from './AboutMeTopNav';
 
 
-export const Profile = props => (
-  <div className='profile-page'>
-    <div className='profile'>
-      <h1>Profile</h1>
+export const AboutMe = props => (
+  <div className='about-me'>
+    <div className='summary'>
+      <AboutMeTopNav />
       <article>
-        <span className='topic'>I love exploring the potential of new technology:</span>
+        <p className='topic'>I love exploring the potential of new technology:</p>
         <p className='profile-article'>
           how it can help make learning more engaging and
           accessible to all people at all of levels of education,
@@ -26,9 +26,10 @@ export const Profile = props => (
           the wonderful things technology can do.
         </p>
       </article>
-      <span className='blurb'>what else mckoy?</span>
-      <a href='#resume'>&#x02193;</a>
+      <p className='blurb'>what else mckoy?</p>
     </div>
+
+    {/* 
     <div id='resume'>
       <div className='technical-skills'>
         <img src={'http://www.bobbyberberyan.com/wp-content/uploads/2016/12/ES6LOGO.svg'} alt='javascript ES6 logo' />
@@ -60,9 +61,8 @@ export const Profile = props => (
       <div className='rutgers'></div>
       <div className='education'></div>
       <p className='profile-nav'>find out more about<span onClick={() => props.dispatch(toggleNav())}> the real mckoy</span></p>
-      <NavModal />
-    </div>
+    </div> */}
   </div>
 );
 
-export default connect()(Profile);
+export default connect()(AboutMe);
