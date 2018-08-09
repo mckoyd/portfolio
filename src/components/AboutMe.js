@@ -26,42 +26,69 @@ export const AboutMe = props => (
           the wonderful things technology can do.
         </p>
       </article>
-      <p className='blurb'>what else mckoy?</p>
+      <a href='#resume' className='blurb'>what else mckoy?</a>
     </div>
-
-    {/* 
     <div id='resume'>
       <div className='technical-skills'>
-        <img src={'http://www.bobbyberberyan.com/wp-content/uploads/2016/12/ES6LOGO.svg'} alt='javascript ES6 logo' />
-        <img src={'http://logosrated.net/wp-content/uploads/parser/React-Logo-1.png'} alt='react logo'/>
-        <img src={'https://cdn-images-1.medium.com/max/312/1*SRL22ADht1NU4LXUeU4YVg.png'} alt='redux logo' />
-        <img src={'https://raw.githubusercontent.com/erikras/redux-form/master/logo.png'} alt={'redux forms logo'} />
-        <img src={'https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2017/07/pic_logo.png?fit=500%2C500&ssl=1'} alt={'json web token logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png'} alt={'HTML5 logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png'} alt={'CSS3 logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gnome-preferences-desktop-accessibility2.svg/2000px-Gnome-preferences-desktop-accessibility2.svg.png'} alt={'web accessibility logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png'} alt={'Node.js logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Antu_mongodb.svg/2000px-Antu_mongodb.svg.png'} alt={'MongoDB logo'} />
-        <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Database-postgres.svg/2000px-Database-postgres.svg.png'} alt={'postgresql logo'} />
-        <img src={'https://apps.odoo.com/apps/icon_image?module_id=37657'} alt={'RESTful API logo'} />
-        <img src={'https://devstickers.com/assets/img/pro/4gem.png'} alt={'mocha logo'} />
-        <img src={'https://avatars2.githubusercontent.com/u/1515293?s=400&v=4'} alt={'chai logo'} />
-        <img src={'https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png'} alt={'git and github logo'} />
-        <img src={'http://www.stickpng.com/assets/images/58480873cef1014c0b5e48ea.png'} alt={'heroku logo'} />
-        <img src={'https://cdn3.iconfinder.com/data/icons/seo-web-1/128/seo-58-512.png'} alt={'hand over a phone with a finger touching the screen'} />
-        <img src={'https://www.raspberrypi.org/wp-content/uploads/2015/08/raspberry-pi-logo.png'} alt={'raspberry pi logo'} />
+        <i className="devicon-javascript-plain fa-2x"></i>
+        <i className="devicon-react-original-wordmark fa-2x"></i>
+        <i className="devicon-chrome-plain-wordmark fa-2x"></i>
+        <i className="devicon-css3-plain-wordmark fa-2x"></i>
+        <i className="devicon-docker-plain-wordmark fa-2x"></i>
+        <i className="devicon-express-original-wordmark fa-2x"></i>
+        <i className="devicon-git-plain-wordmark fa-2x"></i>
+        <i className="devicon-github-plain-wordmark fa-2x"></i>
+        <i className="devicon-google-plain-wordmark fa-2x"></i>
+        <i className="devicon-heroku-original-wordmark fa-2x"></i>
+        <i className="devicon-html5-plain-wordmark fa-2x"></i>
+        <i className="devicon-jasmine-plain-wordmark fa-2x"></i>
+        <i className="devicon-jquery-plain-wordmark fa-2x"></i>
+        <i className="devicon-linux-plain fa-2x"></i>
+        <i className="devicon-mocha-plain fa-2x"></i>
+        <i className="devicon-mongodb-plain-wordmark fa-2x"></i>
+        <i className="devicon-nodejs-plain-wordmark fa-2x"></i>
+        <i className="devicon-postgresql-plain-wordmark fa-2x"></i>
+        <i className="devicon-python-plain-wordmark fa-2x"></i>
+        <i className="devicon-ssh-plain-wordmark fa-2x"></i>
+        <i className="devicon-travis-plain fa-2x"></i>
+        <i className="devicon-visualstudio-plain-wordmark fa-2x"></i>
       </div>
-      <div className='philips'>
-        <img src={'http://img1.wsimg.com/isteam/ip/78bbd227-bb88-480b-ab78-49bce9890cbb/99a92de1-2199-4e0e-a508-f3599eb71b8d.png/:/cr=t:7.63%25,l:7.63%25,w:84.75%25,h:84.75%25/rs=w:223,h:223,cg:true,m'} alt={'school crest for Philip\'s Academy Charter School'} />
-        <div className='philips-desc'>
-          <h2>Education Technology Specialist</h2>
-          <h3>Philip's Academy Charter School</h3>
+      <div className="resume-content">
+        <div className="resume-section">
+          <div className='education'>
+            <h2>Education</h2>
+            <div>
+              <h3>Rutgers University</h3>
+              <p className='res-desc'>Triple major in English, Mathematics, and Biological Sciences</p>
+            </div>
+            <div>
+              <h3>Thinkful</h3>
+              <p>Computer Engineering: HTML5, CSS3, JS, jQuery, Node, React/Redux, ReduxForms, algorithms, data structures and test-driven development</p>
+            </div>
+          </div>
         </div>
+        <div className="resume-section">
+          <div className='experience'>
+            <h2>Experience</h2>
+            <div>
+              <h3>Educational Technology Specialist</h3>
+              <p className='work-place'>@ Philip's Academy Charter School</p>
+              <p><span>where I</span> run data analytics on standardized test scores using python and Excel, integrate technology in the existing curriculum, and facilitate professional development workshops on how technology can guide instruction.</p>
+            </div>
+            <div>
+              <h3>Academic Advisor</h3>
+              <p className='work-place'>@ Rutgers University</p>
+              <p><span>where I</span> ran academic advisement for 200+ students, maintained and developed protocols for technological equipment, and oversaw course development and course preparation.</p>
+            </div>
+          </div>
+        </div>
+        <div className="resume-section">
+          <h3>Check out my <a href='https://www.linkedin.com/in/therealmckoy/'>LinkedIn</a> profile to learn more.</h3>
+        </div>
+        <i onClick={() => props.dispatch(toggleNav())}
+          className='fa fa-angle-right fa-2x' aria-hidden='true'></i>
       </div>
-      <div className='rutgers'></div>
-      <div className='education'></div>
-      <p className='profile-nav'>find out more about<span onClick={() => props.dispatch(toggleNav())}> the real mckoy</span></p>
-    </div> */}
+    </div>
   </div>
 );
 

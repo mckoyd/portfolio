@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Link, Redirect} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { toggleNav } from '../actions';
 import '../styles/side-nav.css';
 
@@ -18,7 +18,8 @@ export const SideNav = props => {
       <Link to='/about_me'
         onClick={() => props.dispatch(toggleNav())}><h3>About Me</h3></Link>
       <p className='nav-desc'><span>Learn more</span> about me and my experience in technology and education.</p>
-      <h3>Projects</h3>
+      <Link to='/projects'
+        onClick={() => props.dispatch(toggleNav())}><h3>Projects</h3></Link>
       <p className='nav-desc'><span>View some</span> screenshots of my projects that are still in production.</p>
       <h3>Contact</h3>
       <p className='nav-desc'><span>Find out</span> the best way to contact me for future projects.</p>

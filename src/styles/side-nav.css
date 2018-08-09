@@ -12,7 +12,7 @@
   transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   box-shadow: none;
   height: 100%;
-  max-width: 50%;
+  max-width: 65%;
   padding: 1em;
   position: fixed;
   right: 0;
@@ -21,7 +21,7 @@
   width: 15em;
   z-index: 1;
   font-size: 1em;
-  background: linear-gradient(rgba(8, 33, 13, 0.88), rgba(25, 54, 41, 0.89)), url(/static/media/menu-modal.6f47e12e.png) no-repeat center center fixed;
+  background: linear-gradient(rgba(8, 33, 13, 0.88), rgba(25, 54, 41, 0.89)), url(../assets/images/menu-modal.png) no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;

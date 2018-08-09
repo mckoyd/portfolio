@@ -40,6 +40,11 @@
   font-size: 1.3em;
 }
 
+.about-me .topic span {
+  border: 1px solid black;
+  margin-top: 1em;
+}
+
 
 .about-me .profile-article {
   padding: 0 1.45em;
@@ -58,45 +63,102 @@
 }
 #resume {
   height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #resume .technical-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 25vh;
-  background-color: rgba(69, 79, 112, 0.8);
+  background-color: rgba(40, 57, 112, 0.8);
+  width: 30%;
+  overflow: auto;
 }
 
-#resume .technical-skills img {
-  width: 32px;
+#resume .technical-skills i {
   padding: 0.5em;
-  height: 32px;
 }
 
-
-#resume .philips {
-  height: 25vh;
-  background-color: rgba(120, 137, 192, 0.8);
+#resume .resume-content {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em;
+  width: 100%;
+  background: linear-gradient(
+    rgba(51, 57, 105, 0.7), 
+    rgba(20, 22, 37, 0.67)
+  ),url('../assets/images/profile.png') no-repeat center center fixed;
+  background-color: rgb(40, 57, 112);
 }
 
-#resume .philips img {
-  padding: 1em 0;;
-  height: 20vh;
-}
-
-#resume .philips .philips-desc h2 {
-
-}
-
-#resume .rutgers {
-  height: 25vh;
-  background-color: rgba(107, 123, 173, 0.8);
+#resume .resume-content i {
+  text-align: center;
 }
 
 #resume .education {
-  height: 25vh;
-  background-color: rgba(114, 129, 177, 0.8);
+  display: flex;
+  flex-direction: column;
 }
+
+#resume .education h2, 
+#resume .experience h2  {
+  font-family: JuliusSans;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 0.3em;
+}
+
+#resume .education h3 {
+  font-size: 0.8em;
+  padding-bottom: 0.2em;
+  font-style: italic;
+}
+
+#resume .education p {
+  font-size: 0.65em;
+}
+
+#resume .res-desc {
+  padding-bottom: 1em
+}
+
+#resume .experience h3 {
+  font-size: 0.8em;
+  padding-bottom: 0.2em;
+  font-style: italic;
+}
+
+#resume .experience .work-place {
+  font-family: JuliusSans;
+  text-transform: lowercase;
+  font-size: 0.55em;
+  padding: 0.3em;
+}
+
+
+#resume .experience p {
+  font-size: 0.65em;
+  padding-bottom: 0.5em;
+}
+
+#resume .resume-content a {
+  font-family: JuliusSans;
+  text-transform: uppercase;
+  animation: focus2 2s infinite;
+  animation-delay: 8s;
+}
+
+@keyframes focus2 {
+  50% {
+    color: transparent;
+  }
+}
+
+#resume .resume-content .resume-section .education {
+
+}
+
+
 
