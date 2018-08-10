@@ -156,8 +156,11 @@
   }
 }
 
-#resume .resume-content .resume-section .education {
-
+@media screen and (min-width: 30em) {
+}
+@media screen and (min-width: 45em) {
+}
+@media screen and (min-width: 60em) {
 }
 
 

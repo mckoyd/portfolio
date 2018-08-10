@@ -97,7 +97,30 @@
     border-color: transparent;
   }
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 30em) {
+  .header {
+    margin-top: 10%;
+    font-size: 1.6em;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 45em) {
+  .header {
+    margin-top: 10%;
+    padding-left: 30%;
+    font-size: 1.8em;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 60em) {
+  .header {
+    margin-top: 8%;
+    padding-left: 30%;
+    font-size: 2em;
+    overflow-y: scroll;
+  }
+}
+/* @media screen and (min-width: 425px) {
   .header {
     margin-top: 10%;
     padding-left: 35%;
@@ -157,7 +180,7 @@
   .header .typer h1 {
     font-size: 2.5em;
   }
-}
+} */
 
 
 

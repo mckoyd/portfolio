@@ -21,8 +21,8 @@ export const SideNav = props => {
       <Link to='/projects'
         onClick={() => props.dispatch(toggleNav())}><h3>Projects</h3></Link>
       <p className='nav-desc'><span>View some</span> screenshots of my projects that are still in production.</p>
-      <h3>Contact</h3>
-      <p className='nav-desc'><span>Find out</span> the best way to contact me for future projects.</p>
+      <h3>Contact Me</h3>
+      <p className='nav-desc'><span>Find me</span> on <a href='https://www.linkedin.com/in/therealmckoy/'>LinkedIn</a> to contact me for future projects. You can also look at some of my ongoing projects via <a href='https://github.com/mckoyd'>GitHub</a>.</p>
       <Link className='home-btn' 
         onClick={() => props.dispatch(toggleNav())}
         to='/'><p>Back to Home</p></Link>
