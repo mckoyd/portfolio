@@ -63,3 +63,21 @@
   text-align: center;
 }
 
+@media screen and (min-width: 30em) {
+}
+@media screen and (min-width: 45em) {
+}
+@media screen and (min-width: 60em) {
+  .project {
+    padding: 0 2em;
+  }
+  .projects .container .project .mockup {
+    flex-direction: row;
+  }
+  .project .mockup .desc h3 {
+    font-size: 1.8em;
+  }
+  .project .mockup .desc p {
+    font-size: 1.1em;
+  }
+}

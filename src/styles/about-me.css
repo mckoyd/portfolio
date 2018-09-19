@@ -91,6 +91,7 @@
     rgba(20, 22, 37, 0.67)
   ),url('../assets/images/profile.png') no-repeat center center fixed;
   background-color: rgb(40, 57, 112);
+  background-size: cover;
 }
 
 #resume .resume-content i {
@@ -161,6 +162,46 @@
 @media screen and (min-width: 45em) {
 }
 @media screen and (min-width: 60em) {
+  .about-me .topic {
+    font-size: 2.5em;
+  }
+  .about-me .profile-article {
+    font-size: 1.8em;
+    margin-left: 13em;
+  }
+  .about-me .blurb {
+    font-size: 2em;
+  }
+  #resume .resume-content {
+    padding: 3em;
+  }
+  #resume .education h2, 
+  #resume .experience h2  {
+  font-size: 2em;
+  }
+
+  #resume .education h3 {
+    font-size: 1.5em;
+  }
+  
+  #resume .education p {
+    font-size: 1em;
+    padding-bottom: 1.8em;
+  }
+  #resume .experience h3 {
+    font-size: 1.5em;
+  }
+  
+  #resume .experience .work-place {
+    font-size: 1.2em;
+    padding: 0.3em;
+  }
+  
+  
+  #resume .experience p {
+    font-size: 1em;
+    line-height: 1.2;
+  }
 }
 
 
